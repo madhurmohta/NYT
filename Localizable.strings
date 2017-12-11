@@ -1,0 +1,13 @@
+/* 
+  Localizable.strings
+  NYT
+
+  Created by Madhur Mohta on 11/12/2017.
+*/
+
+"Server Error Message" = "Server Error occured. Please try again later" ;
+"Server Error" = "Server Error" ;
+"OK" = "OK";
+"No Internet Message" = "Please check your internet connection and try again";
+"Network Unavailable" = "Network Unavailable";
+

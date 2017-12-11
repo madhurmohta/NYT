@@ -7,10 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		F632C92D1FDEC353003552B3 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = F632C92C1FDEC353003552B3 /* Localizable.strings */; };
 		F632C92F1FDEC440003552B3 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = F632C92E1FDEC440003552B3 /* README.md */; };
 		F632C9311FDEC530003552B3 /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = F632C9301FDEC530003552B3 /* Reachability.swift */; };
 		F632C9321FDEC530003552B3 /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = F632C9301FDEC530003552B3 /* Reachability.swift */; };
+		F632C9341FDECEF6003552B3 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = F632C9331FDECEF6003552B3 /* Localizable.strings */; };
 		F6D585CE1FDD586000260CDC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6D585CD1FDD586000260CDC /* AppDelegate.swift */; };
 		F6D585D01FDD586000260CDC /* ArticleListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6D585CF1FDD586000260CDC /* ArticleListViewController.swift */; };
 		F6D585D31FDD586000260CDC /* ArticleList.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F6D585D11FDD586000260CDC /* ArticleList.storyboard */; };
@@ -69,9 +69,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		F632C92C1FDEC353003552B3 /* Localizable.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
 		F632C92E1FDEC440003552B3 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		F632C9301FDEC530003552B3 /* Reachability.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Reachability.swift; sourceTree = "<group>"; };
+		F632C9331FDECEF6003552B3 /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
 		F6D585CA1FDD586000260CDC /* NYT.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NYT.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F6D585CD1FDD586000260CDC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F6D585CF1FDD586000260CDC /* ArticleListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleListViewController.swift; sourceTree = "<group>"; };
@@ -124,6 +124,7 @@
 		F6D585C11FDD586000260CDC = {
 			isa = PBXGroup;
 			children = (
+				F632C9331FDECEF6003552B3 /* Localizable.strings */,
 				F632C92E1FDEC440003552B3 /* README.md */,
 				F6D585CC1FDD586000260CDC /* NYT */,
 				F6D585E11FDD586000260CDC /* NYTTests */,
@@ -148,7 +149,6 @@
 				F6D585CD1FDD586000260CDC /* AppDelegate.swift */,
 				F6D585D41FDD586000260CDC /* Assets.xcassets */,
 				F6D585D61FDD586000260CDC /* LaunchScreen.storyboard */,
-				F632C92C1FDEC353003552B3 /* Localizable.strings */,
 				F6D585D91FDD586000260CDC /* Info.plist */,
 				F6FB58431FDEA97700FDAAF3 /* data.json */,
 			);
@@ -363,7 +363,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F632C92F1FDEC440003552B3 /* README.md in Resources */,
-				F632C92D1FDEC353003552B3 /* Localizable.strings in Resources */,
+				F632C9341FDECEF6003552B3 /* Localizable.strings in Resources */,
 				F6D585D81FDD586000260CDC /* LaunchScreen.storyboard in Resources */,
 				F6D585D51FDD586000260CDC /* Assets.xcassets in Resources */,
 				F6D585D31FDD586000260CDC /* ArticleList.storyboard in Resources */,
