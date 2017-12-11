@@ -3,7 +3,6 @@
 //  NYT
 //
 //  Created by Madhur Mohta on 10/12/2017.
-//  Copyright © 2017 cts. All rights reserved.
 //
 
 import UIKit
@@ -16,6 +15,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        configureInitialView()
         return true
     }
 
@@ -41,6 +41,15 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
     }
 
+    func configureInitialView() {
+        if let navigationController = UIStoryboard(name: "ArticleList", bundle: Bundle.main).instantiateViewController(withIdentifier: kArticleStoryboardIdentifier) as? UINavigationController {
+            let articleVC = navigationController.viewControllers[0] as? ArticleListViewController
+            AppDependencies.configureArticleListView(articleVC!)
+            self.window = UIWindow(frame: UIScreen.main.bounds)
+            self.window?.rootViewController = navigationController
+            self.window?.makeKeyAndVisible()
+        }
+    }
 
 }
 
