@@ -11,7 +11,7 @@ The project can be run on a simulator directly as there are no dependencies with
 While in project window in Xcode, cmd+u can be tapped for all the tests to run
 
 # Code Coverage
-While in project window in Xcode, cmd+u can be tapped for all the tests. To generate code coverage report kindly navigate to the last tab in the left pane and select the top most test NYT row, selecting it and looking on the right pane will habe 3 tabs on top. Select the middle one for code coverage.
+While in project window in Xcode, cmd+u can be tapped for all the tests. To generate code coverage report kindly navigate to the last tab in the left pane and select the top most test NYT row, selecting it and looking on the right pane will have 3 tabs on top. Select the middle one for code coverage.
 
 # License
 

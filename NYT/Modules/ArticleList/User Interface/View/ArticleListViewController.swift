@@ -25,7 +25,9 @@ class ArticleListViewController: UIViewController {
         // Do any additional setup after loading the view, typically from a nib.
         self.tableView.isHidden = true
         self.tableView.tableFooterView = UIView(frame: CGRect.zero)
-        self.navigationController?.navigationBar.prefersLargeTitles = true
+        if #available(iOS 11.0, *) {
+            self.navigationController?.navigationBar.prefersLargeTitles = true
+        } 
         
         fetchData()
     }

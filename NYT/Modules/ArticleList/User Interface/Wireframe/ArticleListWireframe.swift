@@ -15,11 +15,16 @@ class ArticleListWireframe {
     
     func pushDetailsViewController(_ viewController: ArticleListViewController) {
         
+        var safariVC : SFSafariViewController?
         if let url = URL(string: NYTRootModel.sharedInstance.selectedURL ?? "") {
-            let config = SFSafariViewController.Configuration()
-            config.entersReaderIfAvailable = true
-            let vc = SFSafariViewController(url: url, configuration: config)
-            viewController.present(vc, animated: true, completion: nil)
+            if #available(iOS 11.0, *) {
+                let config = SFSafariViewController.Configuration()
+                config.entersReaderIfAvailable = true
+                safariVC = SFSafariViewController(url: url, configuration: config)
+            } else {
+                safariVC = SFSafariViewController(url: url)
+            }
+            viewController.present(safariVC!, animated: true, completion: nil)
         }
     }
 }
